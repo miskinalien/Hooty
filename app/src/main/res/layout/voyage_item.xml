@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="191dp">
+
+
+        <ImageView
+            android:id="@+id/voyage_image"
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/amal"
+            android:layout_height="300px"
+            android:layout_alignParentBottom="true" />
+
+        <RelativeLayout
+            android:layout_height="77dp"
+            android:layout_alignBottom="@+id/voyage_image"
+            android:background="@drawable/black_gradient"
+            android:layout_width="wrap_content">
+
+            <TextView
+                android:text="Mon Voyage "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/voyage_nom"
+                android:fontFamily="sans-serif"
+                android:textSize="36sp"
+                android:textColor="@android:color/white"
+                android:textAlignment="textEnd"
+                android:layout_alignParentTop="true" />
+
+            <TextView
+                android:text="Lieu "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/voyage_lieu"
+                android:fontFamily="sans-serif"
+                android:textSize="24sp"
+                android:textColor="@android:color/white"
+                android:textAlignment="textEnd"
+                android:layout_below="@+id/voyage_nom"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

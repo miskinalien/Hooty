@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.morelle.e4fi_android_hoot.Fragments.BudgetFragment"
+    android:weightSum="1">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="129dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/budget_editor"
+            android:hint="Budget"
+            android:imeOptions="actionSend"/>
+
+        <TextView
+            android:text="Restants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/restants"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Dépenses"
+            android:id="@+id/depenses"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ListView" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="67dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fabSize="normal"
+            app:srcCompat="@android:drawable/ic_input_add"
+            android:id="@+id/add_depense"
+            android:layout_weight="0.16"
+            android:tint="@android:color/white"
+            app:rippleColor="?attr/colorPrimaryDark"
+            app:elevation="1dp"
+            android:visibility="visible"
+            app:useCompatPadding="false"
+            android:adjustViewBounds="false"
+            android:layout_gravity="right"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            app:backgroundTint="@color/blue"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="2dp" />
+    </RelativeLayout>
+
+</LinearLayout>

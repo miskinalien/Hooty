@@ -1,0 +1,43 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.morelle.e4fi_android_hoot.Fragments.OptionFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <Switch
+            android:text="Bonnes notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch1"
+            android:padding="50dp"
+            android:textSize="20sp"
+            android:switchMinWidth="60dp" />
+
+        <Switch
+            android:text="Vie sociale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch3"
+            android:padding="50dp"
+            android:textSize="20sp"
+            android:switchMinWidth="60dp" />
+
+        <Switch
+            android:text="Sommeil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch4"
+            android:padding="50dp"
+            android:textSize="20sp"
+            android:switchMinWidth="60dp" />
+    </LinearLayout>
+
+</FrameLayout>

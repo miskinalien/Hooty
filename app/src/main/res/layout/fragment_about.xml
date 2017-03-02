@@ -1,0 +1,17 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.morelle.e4fi_android_hoot.Fragments.AboutFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:text="Nous sommes des hiboux motivés dont le coeur est rempli de joie et de licornes. Et sinon cette application a été développée avec amour par trois étudiants incroyables d'ESIEE Paris. Copyright Hoot Productions - 2017 - Noisy-Les-Champs RPZ"
+        android:layout_width="wrap_content"
+        android:layout_height="97dp"
+        android:id="@+id/textView4"
+        android:layout_margin="10dp"
+        android:textAlignment="center" />
+
+</FrameLayout>
